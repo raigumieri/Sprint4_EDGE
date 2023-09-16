@@ -22,7 +22,7 @@
 <p> Diante disso, neste README, vamos entender o processo que deve ser feito para criar um servidor, utilizando uma Máquina Virtual <b> VMWARE WORKSTATION </b> como plataforma base. Além disso, utilizaremos a ferramenta <b> POSTMAN </b> para testar e validar o funcionamento desse servidor </p>
 
 <div align="center"> 
-  <img src="https://github.com/raigumieri/Sprint4_EDGE/assets/127215645/af2c8fa9-dfb7-4079-a8f9-01b60ea653e1" width="350px"> 
+  <img src="https://github.com/raigumieri/Sprint4_EDGE/assets/127215645/af2c8fa9-dfb7-4079-a8f9-01b60ea653e1" width=350px> 
 </div>
 
 <br>
@@ -45,12 +45,40 @@
 <p> Após as instalações serem feitas, vamos seguir o passo a passo para a criação da Máquina Virtual: </p>
 
 <ol> 
-  <li> Acesse o VMware Workstation </li>
-  <li> Crie uma nova máquina virtual </li>
-  <li> Clique em "Browse..." e selecione o arquivo Ubuntu</li>
-  <li> </li>
-  <li> </li>
+  <li> Acesse o VMware Workstation; </li>
+  <li> Crie uma nova máquina virtual; </li>
+  <img src="https://github.com/raigumieri/Sprint4_EDGE/assets/127215645/9906f7e9-70b6-4408-b353-bd6df1e584f8">
+  
+  <li> Clique em "Browse..." e selecione o arquivo Ubuntu; </li>
+  <img src="https://github.com/raigumieri/Sprint4_EDGE/assets/127215645/58446223-731c-4c0c-b5eb-e5b59f5d4478" width=400px>
+
+  <li> Faça um registro simples; </li>
+  <img src="https://github.com/raigumieri/Sprint4_EDGE/assets/127215645/ea240bb5-995d-4266-8291-f4fcec517831" width=400px>
+  
+  <li> Clique na opção "Next" até finalizar o processo; </li>
+  <li> Depois de alguns procedimentos, a máquina virtual já está pronta! </li>
+  <img src="https://github.com/raigumieri/Sprint4_EDGE/assets/127215645/a3e95513-e7f9-42a7-9bb1-16f646a2a50f" width=700px>  
 </ol>
+
+<br>
+
+<h2 align="center"> Criação do Servidor </h2>
+<p> Agora que já está tudo pronto, vamos avançar para os comandos necessários para criar o servidor. Primeiro, acesse sua máquina virtual e faça a seguinte combinação: <b> CTRL + ALT + T </b> </p>
+<p> Isso vai dar acesso ao cmd da Máquina Virtual. Após esse passo, siga essas instruções: </p>
+
+<ul> 
+  <li> Instalar o "ifconfig" para identificar o IP da máquina virtual: <b> sudo apt-get install net-tools </b> </li>
+  <li> Comando para ler o IP da Máquina Virtual: <b> ifconfig </b> </li>
+  <li> Fazer a instalação do git: <b> sudo apt install git </b> </li>
+  <li> Link para instalação do Docker: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-pt </li>
+  <li> Copiar os arquivos do repositório Fiware Descomplicado: <b> git clone https://github.com/fabiocabrini/fiware </b> </li>
+  <li> Entrar na pasta do Fiware: <b> cd fiware </b> </li>
+  <li> Rodar os containers: <b> sudo docker compose up -d </b> </li>
+  <li> status dos containers: <b> sudo docker stats </b> </li>
+</ul>
+
+
+
 
 
 

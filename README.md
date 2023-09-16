@@ -58,7 +58,7 @@
   <img src="https://github.com/raigumieri/Sprint4_EDGE/assets/127215645/ea240bb5-995d-4266-8291-f4fcec517831" width=400px>
   
   <p> 5. Clique na opção "Next" até finalizar o processo; </p>
-  <p> 6. Depois de alguns procedimentos, a máquina virtual já está pronta! </p>
+  <p> 6. Depois de alguns procedimentos, a Máquina Virtual já está pronta! </p>
   <img src="https://github.com/raigumieri/Sprint4_EDGE/assets/127215645/a3e95513-e7f9-42a7-9bb1-16f646a2a50f" width=900px>
 </div>
 
@@ -84,6 +84,38 @@
 
 <h2 align="center"> Realizando Testes </h2>
 <p> Agora que o servidor já está pronto, precisamos fazer alguns testes com ele com o intuito de descobrir se está realmente funcionando, vamos utilizar o Postman para fazer os testes. </p>
+
+<ol> 
+  <li> Abra o Postman e importe o arquivo.json </li>
+  <li> Abra a pasta "FIWARE" </li>
+  <li> Abra a pasta "IOT Agent MQTT" </li>
+  <li> Clique em "Health Check" </li>
+  <li> Coloque o IP da Máquina Virtual no lugar da url </li>
+  <img src="https://github.com/raigumieri/Sprint4_EDGE/assets/127215645/9a0f10b5-ea72-4345-ad3d-b52ff5c4790b"> 
+  <li> Depois clique em "Send" </li>
+  <img src="https://github.com/raigumieri/Sprint4_EDGE/assets/127215645/8a30a4fc-d4c3-497e-bb6a-b29da045af18">
+</ol>
+
+<p> Esse processo deve ser feito nos 3 componentes: IOT Agent MQTT, Orion Context Broker, STH-Comet. Eles fazem parte do back-end do projeto, cada um possuindo suas funções </p>
+
+<h3> IOT Agent MQTT </h3>
+<p> O IoT-Agent MQTT atua como uma ponte de comunicação entre dispositivos IoT e um servidor MQTT. Ele facilita a coleta e a transmissão de dados de dispositivos IoT para o servidor MQTT, permitindo a troca eficiente de informações em tempo real entre os dispositivos e a plataforma IoT. </p>
+
+<h3> Orion Context Broker </h3>
+<p> O Orion Context Broker é um componente-chave em arquiteturas de IoT. Sua função principal é gerenciar e armazenar informações contextualmente relevantes de dispositivos e objetos conectados. Ele permite que sistemas IoT coletem, processem e forneçam dados em tempo real sobre o estado e as condições desses dispositivos. Ele opera com base no modelo de Contexto, que significa que ele mantém informações atualizadas sobre o contexto dos objetos IoT, como localização, status, temperatura, e outros dados relevantes. Quando os dispositivos enviam informações para o Orion Context Broker, ele as armazena e disponibiliza para aplicativos e serviços que podem consultar e usar esses dados em tempo real. </p>
+
+<h3> STH-Comet </h3>
+
+<p> A função do STH-Comet é lidar com o armazenamento e recuperação eficientes de séries temporais de dados históricos gerados por dispositivos IoT. Isso significa que ele é responsável por coletar, armazenar e permitir o acesso a informações temporais, como dados de sensores que se acumulam ao longo do tempo. Ele trabalha em conjunto com o Orion Context Broker, que lida com dados em tempo real, para fornecer uma solução completa para a gestão de informações em sistemas IoT. Enquanto o Orion gerencia os dados em tempo real e em contexto, o STH-Comet é responsável por manter um registro histórico desses dados, permitindo a análise retrospectiva, a geração de relatórios e a pesquisa de séries temporais. </p>
+
+<div align="center">
+  <h3> Arquitetura Back-End </h3>
+  <img src="https://github.com/raigumieri/Sprint4_EDGE/assets/127215645/edf32d78-be40-45a1-b787-bddb4c822250">
+</div>
+
+
+
+
 
 
 

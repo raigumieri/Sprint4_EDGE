@@ -15,11 +15,11 @@
 <br>
 
 <h2 align="center"> Introdução </h2>
-<p> O IoT (Internet das Coisas) vem se tornando cada vez mais importante na sociedade, por conta de seus resultados impressionantes na transformação de objetos do dia a dia em entidades conectadas e inteligentes. À medida que a tecnologia evolui, ela abre um mundo de possibilidades, desde a automação residencial até aplicações industriais avançadas. </p>
+<p align="justify"> O IoT (Internet das Coisas) vem se tornando cada vez mais importante na sociedade, por conta de seus resultados impressionantes na transformação de objetos do dia a dia em entidades conectadas e inteligentes. À medida que a tecnologia evolui, ela abre um mundo de possibilidades, desde a automação residencial até aplicações industriais avançadas. </p>
 
-<p> À medida que o IoT continua a moldar o nosso mundo, a chave para desbloquear todo o potencial desses dispositivos conectados muitas vezes reside na capacidade de criar um servidor robusto e confiável. Esses servidores desempenham um papel central na coleta, processamento e distribuição eficiente dos dados gerados por dispositivos IoT. Ao criar um servidor adaptado às necessidades específicas de seus dispositivos, você pode habilitar a comunicação contínua, a segurança dos dados e a análise inteligente, permitindo que sua rede de IoT funcione de maneira suave e eficaz. </p>
+<p align="justify"> À medida que o IoT continua a moldar o nosso mundo, a chave para desbloquear todo o potencial desses dispositivos conectados muitas vezes reside na capacidade de criar um servidor robusto e confiável. Esses servidores desempenham um papel central na coleta, processamento e distribuição eficiente dos dados gerados por dispositivos IoT. Ao criar um servidor adaptado às necessidades específicas de seus dispositivos, você pode habilitar a comunicação contínua, a segurança dos dados e a análise inteligente, permitindo que sua rede de IoT funcione de maneira suave e eficaz. </p>
 
-<p> Diante disso, neste README, vamos entender o processo que deve ser feito para criar um servidor, utilizando uma Máquina Virtual <b> VMWARE WORKSTATION </b> como plataforma base. Além disso, utilizaremos a ferramenta <b> POSTMAN </b> para testar e validar o funcionamento desse servidor </p>
+<p align="justify"> Diante disso, neste README, vamos entender o processo que deve ser feito para criar um servidor, utilizando uma Máquina Virtual <b> VMWARE WORKSTATION </b> como plataforma base. Além disso, utilizaremos a ferramenta <b> POSTMAN </b> para testar e validar o funcionamento desse servidor </p>
 
 <div align="center"> 
   <img src="https://github.com/raigumieri/Sprint4_EDGE/assets/127215645/af2c8fa9-dfb7-4079-a8f9-01b60ea653e1" width=350px> 
@@ -28,7 +28,7 @@
 <br>
 
 <h2 align="center"> Instalações necessárias </h2>
-<p> Antes de começar o processo de criação de um servidor, é necessário instalar alguns itens que fazem parte deste processo, que seriam: </p>
+<p align="justify"> Antes de começar o processo de criação de um servidor, é necessário instalar alguns itens que fazem parte deste processo, que seriam: </p>
 
 <ul> 
   <li> Virtual Machine (VMware Workstation): https://www.vmware.com/br/products/workstation-player/workstation-player-evaluation.html </li>
@@ -38,6 +38,12 @@
 </ul>
 
 <p align="center"> Vale ressaltar que este arquivo da Collection deve ser importada na plataforma Postman, para fazer os devidos testes do servidor. </p>
+
+<br> 
+
+<h3> Requisitos de Hardware: </h3>
+<p> Memória RAM: 4GB </p>
+<p> Armazenamento (HD/SSD): 20GB </p>
 
 <br>
 
@@ -96,30 +102,20 @@
   <img src="https://github.com/raigumieri/Sprint4_EDGE/assets/127215645/8a30a4fc-d4c3-497e-bb6a-b29da045af18">
 </ol>
 
-<p> Esse processo deve ser feito nos 3 componentes: IOT Agent MQTT, Orion Context Broker, STH-Comet. Eles fazem parte do back-end do projeto, cada um possuindo suas funções </p>
+<p> Esse processo deve ser feito nos 3 componentes: IOT Agent MQTT, Orion Context Broker, STH-Comet. Eles fazem parte do back-end do projeto, cada um possuindo suas funções: </p>
 
 <h3> IOT Agent MQTT </h3>
-<p> O IoT-Agent MQTT atua como uma ponte de comunicação entre dispositivos IoT e um servidor MQTT. Ele facilita a coleta e a transmissão de dados de dispositivos IoT para o servidor MQTT, permitindo a troca eficiente de informações em tempo real entre os dispositivos e a plataforma IoT. </p>
+<p align="justify"> O IoT-Agent MQTT atua como uma ponte de comunicação entre dispositivos IoT e um servidor MQTT. Ele facilita a coleta e a transmissão de dados de dispositivos IoT para o servidor MQTT, permitindo a troca eficiente de informações em tempo real entre os dispositivos e a plataforma IoT. </p>
 
 <h3> Orion Context Broker </h3>
-<p> O Orion Context Broker é um componente-chave em arquiteturas de IoT. Sua função principal é gerenciar e armazenar informações contextualmente relevantes de dispositivos e objetos conectados. Ele permite que sistemas IoT coletem, processem e forneçam dados em tempo real sobre o estado e as condições desses dispositivos. Ele opera com base no modelo de Contexto, que significa que ele mantém informações atualizadas sobre o contexto dos objetos IoT, como localização, status, temperatura, e outros dados relevantes. Quando os dispositivos enviam informações para o Orion Context Broker, ele as armazena e disponibiliza para aplicativos e serviços que podem consultar e usar esses dados em tempo real. </p>
+<p align="justify"> O Orion Context Broker é um componente-chave em arquiteturas de IoT. Sua função principal é gerenciar e armazenar informações contextualmente relevantes de dispositivos e objetos conectados. Ele permite que sistemas IoT coletem, processem e forneçam dados em tempo real sobre o estado e as condições desses dispositivos. Ele opera com base no modelo de Contexto, que significa que ele mantém informações atualizadas sobre o contexto dos objetos IoT, como localização, status, temperatura, e outros dados relevantes. Quando os dispositivos enviam informações para o Orion Context Broker, ele as armazena e disponibiliza para aplicativos e serviços que podem consultar e usar esses dados em tempo real. </p>
 
 <h3> STH-Comet </h3>
-
-<p> A função do STH-Comet é lidar com o armazenamento e recuperação eficientes de séries temporais de dados históricos gerados por dispositivos IoT. Isso significa que ele é responsável por coletar, armazenar e permitir o acesso a informações temporais, como dados de sensores que se acumulam ao longo do tempo. Ele trabalha em conjunto com o Orion Context Broker, que lida com dados em tempo real, para fornecer uma solução completa para a gestão de informações em sistemas IoT. Enquanto o Orion gerencia os dados em tempo real e em contexto, o STH-Comet é responsável por manter um registro histórico desses dados, permitindo a análise retrospectiva, a geração de relatórios e a pesquisa de séries temporais. </p>
+<p align="justify"> A função do STH-Comet é lidar com o armazenamento e recuperação eficientes de séries temporais de dados históricos gerados por dispositivos IoT. Isso significa que ele é responsável por coletar, armazenar e permitir o acesso a informações temporais, como dados de sensores que se acumulam ao longo do tempo. Ele trabalha em conjunto com o Orion Context Broker, que lida com dados em tempo real, para fornecer uma solução completa para a gestão de informações em sistemas IoT. Enquanto o Orion gerencia os dados em tempo real e em contexto, o STH-Comet é responsável por manter um registro histórico desses dados, permitindo a análise retrospectiva, a geração de relatórios e a pesquisa de séries temporais. </p>
 
 <div align="center">
   <h3> Arquitetura Back-End </h3>
   <img src="https://github.com/raigumieri/Sprint4_EDGE/assets/127215645/edf32d78-be40-45a1-b787-bddb4c822250">
 </div>
-
-
-
-
-
-
-
-
-
 
 

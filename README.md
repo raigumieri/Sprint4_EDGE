@@ -1,4 +1,4 @@
-<h1 align="center"> Sprint 4 (EDGE) - SERVIDOR IOT </h1>
+<h1 align="center"> Sprint 3 (EDGE) - SERVIDOR IOT </h1>
 
 <h3>Integrantes do grupo: </h3>
 

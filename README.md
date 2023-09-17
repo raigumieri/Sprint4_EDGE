@@ -89,7 +89,7 @@
 <img src="https://github.com/raigumieri/Sprint4_EDGE/assets/127215645/ff10668e-4084-4de6-9d4c-6e87e73b687f">
 
 <h2 align="center"> Realizando Testes </h2>
-<p> Agora que o servidor já está pronto, precisamos fazer alguns testes com ele com o intuito de descobrir se está realmente funcionando, vamos utilizar o Postman para fazer os testes. </p>
+<p> Agora que o servidor já está pronto, precisamos fazer alguns testes com ele para descobrir se está realmente funcionando, vamos utilizar o Postman para fazer os testes. </p>
 
 <ol> 
   <li> Abra o Postman e importe o arquivo.json </li>

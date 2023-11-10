@@ -133,7 +133,7 @@
   <li> ESP32; </li>
   <li> DHT11 ou DHT22; </li>
   <li> Display LCD I2C; </li>
-  <li> Resistor de 10kΩ." </li>
+  <li> Resistor de 10kΩ. </li>
 </ul>
 
 <p align="justify"> Se você não tiver as peças físicas à disposição, existe a opção de montar o projeto no site Wokwi. Vamos seguir o procedimento online, mas sinta-se à vontade para realizar a montagem presencialmente, caso prefira. </p>
